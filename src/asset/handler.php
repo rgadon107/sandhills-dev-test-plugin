@@ -2,18 +2,18 @@
 /**
  * Asset Handler.
  *
- * @package     KnowTheCode\StarterPlugin\Asset
+ * @package     spiralWebDB\Sandhills\Asset
  * @since       1.0.0
  * @author      hellofromTonya
  * @link        https://knowthecode.io
  * @license     GNU-2.0+
  */
 
-namespace KnowTheCode\StarterPlugin\Asset;
+namespace spiralWebDB\Sandhills\Asset;
 
-use function KnowTheCode\StarterPlugin\_get_plugin_directory;
-use function KnowTheCode\StarterPlugin\_get_plugin_url;
-use function KnowTheCode\StarterPlugin\_is_in_development_mode;
+use function spiralWebDB\Sandhills\_get_plugin_directory;
+use function spiralWebDB\Sandhills\_get_plugin_url;
+use function spiralWebDB\Sandhills\_is_in_development_mode;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_plugin_script' );
 /**

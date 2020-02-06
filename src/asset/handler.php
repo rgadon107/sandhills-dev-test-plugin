@@ -4,7 +4,7 @@
  *
  * @package     spiralWebDB\Sandhills\Asset
  * @since       1.0.0
- * @author      hellofromTonya
+ * @author      Robert A Gadon
  * @link        https://knowthecode.io
  * @license     GNU-2.0+
  */

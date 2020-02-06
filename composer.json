@@ -1,31 +1,15 @@
 {
-	"name": "knowthecode/starter-plugin",
-	"description": "A WordPress plugin boilerplate that emphasizes code quality.",
+	"name": "rgadon107/sandhills-dev-test",
+	"description": "A test plugin to apply foundational knowledge of WordPress APIs.",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0-or-later",
-	"homepage": "https://knowthecode.io/",
+	"homepage": "https://spiralwebdb.com/",
 	"support": {
-		"issues": "https://github.com/KnowTheCode/starter-plugin/issues",
-		"source": "https://github.com/KnowTheCode/starter-plugin"
+		"issues": "https://github.com/rgadon107/sandhills-dev-test-plugin/issues",
+		"source": "https://github.com/rgadon107/sandhills-dev-test-plugin"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
-	"autoload": {
-		"exclude-from-classmap": [
-			"/tests/"
-		]
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"KnowTheCode\\StarterPlugin\\Tests\\PHP\\": "tests/php/",
-			"KnowTheCode\\StarterPlugin\\Tests\\PHP\\Unit\\": "tests/php/unit/",
-			"KnowTheCode\\StarterPlugin\\Tests\\PHP\\Integration\\": "tests/php/integration/"
-		}
-	},
-	"require": {
-		"php": "^5.6|^7",
-		"composer/installers": "^1.0"
-	},
 	"require-dev": {
 		"brain/monkey": "^2.2",
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",

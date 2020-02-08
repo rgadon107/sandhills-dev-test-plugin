@@ -76,7 +76,8 @@ function _is_in_development_mode() {
  */
 function autoload_files() {
 	$files = [
-
+		'asset/post-type.php',
+		'asset/label-generator.php',
 	];
 
 	foreach ( $files as $file ) {

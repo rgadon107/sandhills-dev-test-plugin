@@ -22,6 +22,14 @@ add_action( 'init', __NAMESPACE__ . '\load_config_and_register_post_type' );
 function load_config_and_register_post_type() {
 	$config = require_once _get_plugin_directory() . '/config/post-type.php';
 
+	if ( ! is_array( $config ) || empty( $config ) ) {
+		return false;
+	}
+
+	if ( empty( $config['post_type'] ) ) {
+		return;
+	}
+
 	$post_type = $config['post_type'];
 
 	register_the_custom_post_type( $post_type, $config );

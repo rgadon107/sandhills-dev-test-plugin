@@ -43,7 +43,7 @@ function load_config_and_register_post_type() {
  *
  * @since 1.0.0
  */
-function register_the_custom_post_type( $post_type, (array) $config ) {
+function register_the_custom_post_type( $post_type, array $config ) {
 	$args = $config['args'];
 
 	if ( ! $args['supports'] ) {

@@ -67,6 +67,33 @@ function _is_in_development_mode() {
 	return defined( WP_DEBUG ) && WP_DEBUG === true;
 }
 
+/*
+ *  Register plugin with WordPress.
+ *
+ *  @since 1.0.0
+ *
+ *  @param string $plugin_file  The filename of the plugin including the path.
+ *
+ *  @return void
+ */
+function register_plugin( $plugin_file ) {
+
+	register_activation_hook( __FILE__, __NAMESPACE__ . '\delete_rewrite_rules_on_plugin_status_change' );
+	register_deactivation_hook( __FILE__, __NAMESPACE__ . '\delete_rewrite_rules_on_plugin_status_change' );
+	register_uninstall_hook( __FILE__, __NAMESPACE__ . '\delete_rewrite_rules_on_plugin_status_change' );
+}
+
+/**
+ * Delete the rewrite rules on plugin status change, i.e. activation, deactivation, or uninstall.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function delete_rewrite_rules_on_plugin_status_change() {
+	delete_option( 'rewrite_rules' );
+}
+
 /**
  * Autoload the plugin's files.
  *
@@ -95,6 +122,8 @@ function autoload_files() {
  */
 function launch() {
 	autoload_files();
+
+	register_plugin( __FILE__ );
 }
 
 launch();

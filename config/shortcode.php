@@ -2,7 +2,7 @@
 /**
  *  The shortcode runtime configuration parameters.
  *
- * @package    spiralWebDB\Sandhills\Asset
+ * @package    spiralWebDB\Sandhills
  * @since      1.0.0
  * @author     Robert A. Gadon
  * @link       http://spiralwebdb.com
@@ -36,14 +36,14 @@ return array(
 	 * processing.  Defaults to null.
 	 *
 	 *==================================================*/
-	'processing_function'         => null,
+	'processing_function'         => __NAMESPACE__ . '\process_the_shortcode',
 	/**=================================================
 	 *
 	 * The absolute path to the view file. If more than
 	 * one, use an array of view files.
 	 *
 	 *==================================================*/
-	'view'                        => '',
+	'view'                        => _get_plugin_url() . '/src/asset/views/shortcode.php',
 
 	/**=================================================
 	 *
@@ -51,5 +51,7 @@ return array(
 	 *  overridable by the author.
 	 *
 	 *==================================================*/
-	'defaults'                    => array(),
+	'defaults'                    => [
+		'url'       => '',
+	],
 );

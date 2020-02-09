@@ -22,7 +22,7 @@ function register_the_shortcode( $config = [] ) {
 		return;
 	}
 
-	add_shortcode( $config['shortcode_name'], __NAMESPACE__ . '\process_the_shortcode';
+	add_shortcode( $config['shortcode_name'], __NAMESPACE__ . '\process_the_shortcode' );
 }
 
 function process_the_shortcode() {

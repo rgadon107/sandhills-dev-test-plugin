@@ -2,16 +2,14 @@
 /**
  *  Register custom post type
  *
- * @package    spiralWebDB\Sandhills\Asset
+ * @package    spiralWebDB\Sandhills
  * @since      1.0.0
  * @author     Robert A. Gadon
  * @link       http://spiralwebdb.com
  * @license    GNU General Public License 2.0+
  */
 
-namespace spiralWebDB\Sandhills\Asset;
-
-use function spiralWebDB\Sandhills\_get_plugin_directory;
+namespace spiralWebDB\Sandhills;
 
 add_action( 'init', __NAMESPACE__ . '\load_config_and_register_post_type' );
 /**

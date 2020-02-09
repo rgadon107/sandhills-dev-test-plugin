@@ -1,14 +1,14 @@
 <?php
 /**
- *  Label generator for custom post type and taxonomies. 
+ *  Label generator for custom post type and taxonomies.
  *
- * @package    spiralWebDB\Sandhills\Asset
+ * @package    spiralWebDB\Sandhills
  * @since      1.0.0
  * @author     Robert A. Gadon
  * @link       http://spiralwebdb.com
  * @license    GNU General Public License 2.0+
  */
-namespace spiralWebDB\Sandhills\Asset;
+namespace spiralWebDB\Sandhills;
 
 /**
  *  Generate the labels for a Taxonomy or Post Type.

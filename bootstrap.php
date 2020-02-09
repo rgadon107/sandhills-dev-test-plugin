@@ -78,6 +78,7 @@ function autoload_files() {
 	$files = [
 		'asset/post-type.php',
 		'asset/label-generator.php',
+		'asset/shortcode.php',
 	];
 
 	foreach ( $files as $file ) {

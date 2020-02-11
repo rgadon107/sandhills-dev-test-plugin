@@ -106,6 +106,7 @@ function autoload_files() {
 		'asset/post-type.php',
 		'asset/label-generator.php',
 		'asset/shortcode.php',
+		'/template/helpers.php'
 	];
 
 	foreach ( $files as $file ) {

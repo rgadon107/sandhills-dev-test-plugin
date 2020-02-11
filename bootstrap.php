@@ -22,6 +22,10 @@
 
 namespace spiralWebDB\Sandhills;
 
+if ( ! defined( 'ABSPATH' ) ) {
+	die( "Oh, silly, there's nothing to see here." );
+}
+
 /**
  * Gets this plugin's absolute directory path.
  *

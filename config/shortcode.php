@@ -43,7 +43,7 @@ return array(
 	 * one, use an array of view files.
 	 *
 	 *==================================================*/
-	'view'                        => _get_plugin_url() . '/src/asset/views/shortcode.php',
+	'view'                        => _get_plugin_url() . '/src/shortcode/views/shortcode.php',
 
 	/**=================================================
 	 *

@@ -107,6 +107,7 @@ function delete_rewrite_rules_on_plugin_status_change() {
  */
 function autoload_files() {
 	$files = [
+		'load-assets.php',
 		'post-type/post-type.php',
 		'post-type/label-generator.php',
 		'shortcode/shortcode.php',

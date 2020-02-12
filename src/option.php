@@ -11,7 +11,7 @@
 
 namespace spiralWebDB\Sandhills;
 
-/*
+/**
  * Call remote IP address.
  *
  * @since 1.0.0
@@ -22,7 +22,7 @@ function get_remote_ip_address() {
 	$response = wp_remote_get( $url );
 
 	if ( is_wp_error( $response ) ) {
-		echo $response->get_error_messages();
+		echo esc_html( $response->get_error_messages() );
 		return false;
 	}
 

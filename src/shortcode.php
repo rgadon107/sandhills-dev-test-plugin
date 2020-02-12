@@ -27,7 +27,9 @@ function process_product_feature_shortcode() {
 
 	ob_start();
 	include __DIR__ . '/view/shortcode.php';
-	ob_get_clean();
+	$output = ob_get_clean();
+
+	echo $output;
 }
 
 /*

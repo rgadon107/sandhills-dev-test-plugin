@@ -1,25 +1,46 @@
-# Starter Plugin for WordPress
+# Sandhills Development Test Plugin
 
-A WordPress plugin boilerplate that emphasizes code quality. 
+This plugin is a demonstration project for the Junior Developer position currently open at the Sandhills Development Corporation.
+
+## Assignment Features
+
+- Registration of a custom post type (CPT) handler to register a `product` post type from a custom configuration.
+- Registration of a `[feature]` shortcode.
+- An HTTP request to ‘http://bot.whatismyipaddress.com/' to retrieve the caller’s IP address.
+- Transient storage for one hour of the retrieved IP address in the `wp_options` database table. The transient is named `sandhills_get_remote_ip_address`.
+
+### Boilerplate Source Code
+
+The plugin is built off the WordPress boilerplate starter plugin available from <a href=“https://github.com/KnowTheCode/starter-plugin”>the public GitHub repo for KnowTheCode.io</a>. Recent updates to the boilerplate include:
+
+- updated Composer dev-dependences to run WP and PHP coding standards;
+- a binary shell script to integrate with TravisCI; and
+- an updated unit and WP integration testing framework.
+
+*****************************************************************
+
+# Starter Plugin for WordPress (from the original README.md file)
+
+A WordPress plugin boilerplate that emphasizes code quality.
 
 This boilerplate provides you with a solid foundation to rapidly start your custom plugin development project.  It's fully compliant with PHPCS and WPCS coding standards. It's modular in design. Emphasis is given to SOLID principles.  Validators are built right into the plugin, pre-configured and pre-wired for you to use.
 
-You are free to use this plugin.  Rename it.  Change the namespace and author information.  It's yours to use. 
+You are free to use this plugin.  Rename it.  Change the namespace and author information.  It's yours to use.
 
 ## Features
- 
+
  ### Smart Architecture
- 
+
  - Provides modular, well-organized architecture to group functionality and features together.
  - No Constants. Eliminates the need for constant definitions. No more polluting the global space. Instead it uses private helper functions.
  - Purposeful, expressive naming strategies to clearly _tell you_ what is happening and why.
  - No prefixes. Prefixes make it harder to read. This plugin uses namespacing instead, providing for better conflict protection and intent expression.
  - Better asset versioning by using each file's modification timestamp instead of hard-coded version numbers.
- 
+
  ### Pre-wired Test Suites
- 
+
  Wiring up test suites can be challenging.  This plugin handles it for you.
- 
+
  - Separation of [Unit and Integration](https://knowthecode.io/labs/unit-integration-testing-basics/episode-4) testing suites.
  - Bootstrapping for each suite is all done for you.
  - Test cases are built in for you.
@@ -30,17 +51,17 @@ You are free to use this plugin.  Rename it.  Change the namespace and author in
     - Run the unit tests via `composer test-unit`.
     - Run the integration tests via `composer test-integration`.
     - Run all of the tests via `composer run-tests`.
- 
+
  Psst, need help getting rolling? Check out this hands-on coding labs:
-  
+
  - [Unit & Integration Testing Basics](https://knowthecode.io/labs/unit-integration-testing-basics)
  - [Unit Testing with Brain Monkey](https://knowthecode.io/labs/unit-testing-brain-monkey)
  - [Testing Hooks with Brain Monkey](https://knowthecode.io/labs/testing-hooks-brain-monkey)
- 
+
  ### Code Validation
- 
+
  Code validators _sniff out_ any compliance issues in your code.  It looks for issues with your code's formatting, naming conventions, security, construction, and more.  This plugin includes:
- 
+
  - PHPCS and WordPress Coding Standard (WPCS) sniffers.
  - Variable analyzer.
  - Pre-configured composer scripts (for Mac and Windows), providing a fast, easy shortcut to run validators on the `src`, tests, or both:
@@ -77,4 +98,3 @@ The next step is to rename the namespace, plugin's file header, and the author i
 5. Do a global search and replace to change the `@link` from `https://knowthecode.io` to your URI.
 
 Bam, you are ready to start building your plugin.
-    

@@ -24,7 +24,7 @@ add_action( 'init', __NAMESPACE__ . '\register_custom_post_types' );
  * @since 1.0.0
  *
  * @return bool true on success; else false.
- * @throws InvalidArgumentException when "post_type" is not configured.
+ * @Throws InvalidArgumentException when "post_type" is not configured.
  */
 function register_custom_post_types() {
 	// Load the configurations.
@@ -80,7 +80,7 @@ function generate_supported_post_type_features( $features = [] ) {
 	return merge_post_type_features( $supported_features, $features['additional'] );
 }
 
-/*
+/**
  *  Exclude features from the given supported post type features.
  *
  *  @since 1.0.0
@@ -109,7 +109,7 @@ function exclude_post_type_features( array $supported, array $excluded = [] ) {
 	return $features;
 }
 
-/*
+/**
  *  Merge the post type's supported features.
  *
  *  @since 1.0.0

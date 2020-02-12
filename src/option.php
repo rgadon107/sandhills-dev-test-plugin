@@ -26,9 +26,7 @@ function get_remote_ip_address() {
 		return false;
 	}
 
-	$address = $response['body'];
-
-	return $address;
+	return $response['body'];
 }
 
 $value = get_remote_ip_address();

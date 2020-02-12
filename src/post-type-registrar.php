@@ -28,7 +28,7 @@ add_action( 'init', __NAMESPACE__ . '\register_custom_post_types' );
  */
 function register_custom_post_types() {
 	// Load the configurations.
-	$configs = require_once _get_plugin_directory() . '/config/custom-post-types.php';
+	$configs = require_once _get_plugin_directory() . '/src/config/custom-post-types.php';
 	if ( ! is_array( $configs ) || empty( $configs ) ) {
 		return false;
 	}

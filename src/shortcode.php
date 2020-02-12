@@ -15,19 +15,17 @@ namespace spiralWebDB\Sandhills;
  *
  * @since 1.0.0
  */
-add_shortcode( 'feature' , __NAMESPACE__ . '\process_feature_shortcode' );
+add_shortcode( 'feature' , __NAMESPACE__ . '\process_product_feature_shortcode' );
 
 /*
  * Processing callback for the [feature] shortcode.
  *
  * @since 1.0.0.
  */
-function process_feature_shortcode() {
+function process_product_feature_shortcode() {
 
 	ob_start();
 	include '/view/shortcode.php';
 	ob_get_clean();
 }
 
-global $shortcode_tags;
-dump( $shortcode_tags );

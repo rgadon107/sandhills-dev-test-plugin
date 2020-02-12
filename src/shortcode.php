@@ -32,18 +32,3 @@ function process_product_feature_shortcode() {
 	echo $output;
 }
 
-/*
- * Call remote IP address.
- *
- * @since 1.0.0
- * @return string $address  The IP address returned by the http GET request.
- */
-function get_remote_ip_address() {
-	$url      = 'http://bot.whatismyipaddress.com/';
-	$response = wp_remote_get( $url );
-	$address  = $response['body'];
-
-	return $address;
-}
-
-get_remote_ip_address();

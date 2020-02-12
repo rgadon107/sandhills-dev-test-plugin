@@ -24,7 +24,7 @@ add_action( 'init', __NAMESPACE__ . '\register_custom_post_types' );
  * @since 1.0.0
  *
  * @return bool true on success; else false.
- * @Throws InvalidArgumentException when "post_type" is not configured.
+ * @throws InvalidArgumentException When "post_type" is not configured.
  */
 function register_custom_post_types() {
 	// Load the configurations.

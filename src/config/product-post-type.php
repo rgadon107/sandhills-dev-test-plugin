@@ -54,10 +54,9 @@ return [
 			'author',
 			'post-formats',
 		],
-		// Uncomment code below to activate feature.
-//		'additional'     => [
-//			'page-attributes',
-//		],
+		'additional'     => [
+			/*'page-attributes',*/
+		],
 	],
 
 	/**==============================================================

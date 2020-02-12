@@ -25,7 +25,7 @@ add_shortcode( 'feature' , __NAMESPACE__ . '\process_product_feature_shortcode' 
 function process_product_feature_shortcode() {
 
 	ob_start();
-	include '/view/shortcode.php';
+	include __DIR__ . '/view/shortcode.php';
 	ob_get_clean();
 }
 

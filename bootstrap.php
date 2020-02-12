@@ -105,6 +105,7 @@ function autoload_files() {
 	$files = [
 		'post-type-registrar.php',
 		'shortcode.php',
+		'option.php'
 	];
 
 	foreach ( $files as $file ) {

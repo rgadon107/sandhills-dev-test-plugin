@@ -48,8 +48,8 @@ before_script:
     fi
 
 script:
-  - composer run-tests
-  - composer run-phpcs
+  //- composer run-tests
+  //- composer run-phpcs
 
 notifications:
   on_success: never

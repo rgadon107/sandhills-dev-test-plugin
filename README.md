@@ -13,9 +13,8 @@ This plugin is a demonstration project for the Junior Developer position current
 
 The plugin is built off the WordPress boilerplate starter plugin available from <a href=“https://github.com/KnowTheCode/starter-plugin”>the public GitHub repo for KnowTheCode.io</a>. Recent updates to the boilerplate include:
 
-- updated Composer dev-dependences to run WP and PHP coding standards;
-- a binary shell script to integrate with TravisCI; and
-- an updated unit and WP integration testing framework.
+- updated Composer dev-dependences to run WP and PHP coding standards; and
+- a binary shell script to integrate with TravisCI.
 
 *****************************************************************
 

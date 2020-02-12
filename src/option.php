@@ -20,13 +20,19 @@ namespace spiralWebDB\Sandhills;
 function get_remote_ip_address() {
 	$url      = 'http://bot.whatismyipaddress.com/';
 	$response = wp_remote_get( $url );
-	$address  = $response['body'];
+
+	if ( is_wp_error( $response ) ) {
+		echo $response->get_error_messages();
+		return false;
+	}
+
+	$address = $response['body'];
 
 	return $address;
 }
 
 $value = get_remote_ip_address();
 
-// Transient option value expires in 1 hour (3600 seconds). 
+// Transient option value expires in 1 hour (3600 seconds).
 set_transient( 'sandhills_get_remote_ip_address', $value, 3600 );
 

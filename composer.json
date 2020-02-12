@@ -40,12 +40,7 @@
 	"install-codestandards": [
 	  "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
 	],
-	"phpcs-src": "\"vendor/bin/phpcs\" src/",
-	"phpcs-tests": "\"vendor/bin/phpcs\" Tests/",
-	"run-phpcs": [
-	  "@phpcs-src",
-	  "@phpcs-tests"
-	]
+	"phpcs-src": "\"vendor/bin/phpcs\" src/"
   }
 }
 

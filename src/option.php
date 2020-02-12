@@ -27,5 +27,6 @@ function get_remote_ip_address() {
 
 $value = get_remote_ip_address();
 
+// Transient option value expires in 1 hour (3600 seconds). 
 set_transient( 'sandhills_get_remote_ip_address', $value, 3600 );
 

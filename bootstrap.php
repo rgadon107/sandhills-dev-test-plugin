@@ -104,6 +104,7 @@ function delete_rewrite_rules() {
 function autoload_files() {
 	$files = [
 		'post-type-registrar.php',
+		'shortcode.php',
 	];
 
 	foreach ( $files as $file ) {

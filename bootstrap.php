@@ -10,7 +10,7 @@
  * Plugin Name:         Sandhills Development Test Plugin
  * Plugin URI:          https://github.com/rgadon107/sandhills-dev-test-plugin
  * Description:         A plugin to demonstrate knowledge and skill in the application of various WordPress APIs.
- * Version:             0.1
+ * Version:             1.0
  * Requires at least:   5.1
  * Requires PHP:        5.6
  * Author:              Robert A Gadon
@@ -37,38 +37,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function _get_plugin_directory() {
 	return __DIR__;
-}
-
-/**
- * Gets this plugin's URL.
- *
- * @since  1.0.0
- * @ignore
- * @access private
- *
- * @return string
- */
-function _get_plugin_url() {
-	static $plugin_url;
-
-	if ( empty( $plugin_url ) ) {
-		$plugin_url = plugins_url( null, __FILE__ );
-	}
-
-	return $plugin_url;
-}
-
-/**
- * Checks if this plugin is in development mode.
- *
- * @since  1.0.0
- * @ignore
- * @access private
- *
- * @return bool
- */
-function _is_in_development_mode() {
-	return defined( WP_DEBUG ) && WP_DEBUG === true;
 }
 
 /*
